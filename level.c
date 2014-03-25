@@ -1,22 +1,14 @@
-/*
-**          444    222222          GGG     AAA     MM   MM EEEEE
-**         4444        222       GG       AA AA    MMMMMMM EE
-**        44 44          22      GG  G   AA   AA   MM M MM EEEEE
-**       44  44          22      GG  G  AAAAAAAAA  MM   MM EE
-**      44   44         22         GGG AA       AA MM   MM EEEEE
-**     4444444444      22
-**     4444444444     22      SS  TTTTTT UU    UU DDDD   II   OOOO
-**           44      22      SS     TT   UU    UU DD  DD II  OO  OO
-**           44     22        SS    TT   UU    UU DD  DD II OO    OO
-**           44    222         SS   TT   UU    UU DD  DD II  OO  OO
-**           44    22222222   SS    TT     UUUU   DDDD   II   OOOO
-**
-** Project name: Demineur
-** File name: level.c
-** Made by: jchichep
-** File created  on  Tue Sep  3 16:17:48 2013 by jchichep
-** Last modified on  Fri Jan  3 16:31:58 2014 by jchichep
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   level.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jchichep <jchichep@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/03/25 08:24:29 by jchichep          #+#    #+#             */
+/*   Updated: 2014/03/25 08:38:27 by jchichep         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	<stdlib.h>
 #include	<unistd.h>
@@ -77,7 +69,7 @@ void		custom_level()
 	str = malloc(sizeof(*str) * 1024);
 	verify = -1;
 	while (verify != 1)
-    {
+	{
 		if (verify == 0)
 			ft_putstr("Valeur incorrecte \n");
 		ft_bzero(str, 1024);
@@ -93,7 +85,7 @@ void		custom_level()
 		read(0, str, 1023);
 		size.m = ft_atoi(str);
 		verify = verify_arg(&size);
-    }
+	}
 	set_raw_mode();
 	ft_putstr("\033[?25l\n");
 	start_game(&size);

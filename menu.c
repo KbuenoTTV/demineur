@@ -1,22 +1,14 @@
-/*
-**          444    222222          GGG     AAA     MM   MM EEEEE
-**         4444        222       GG       AA AA    MMMMMMM EE
-**        44 44          22      GG  G   AA   AA   MM M MM EEEEE
-**       44  44          22      GG  G  AAAAAAAAA  MM   MM EE
-**      44   44         22         GGG AA       AA MM   MM EEEEE
-**     4444444444      22
-**     4444444444     22      SS  TTTTTT UU    UU DDDD   II   OOOO
-**           44      22      SS     TT   UU    UU DD  DD II  OO  OO
-**           44     22        SS    TT   UU    UU DD  DD II OO    OO
-**           44    222         SS   TT   UU    UU DD  DD II  OO  OO
-**           44    22222222   SS    TT     UUUU   DDDD   II   OOOO
-**
-** Project name: Demineur
-** File name: menu.c
-** Made by: jchichep
-** File created  on  Tue Sep  3 14:24:43 2013 by jchichep
-** Last modified on  Wed Jan  8 20:51:52 2014 by jchichep
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   menu.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jchichep <jchichep@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/03/25 08:24:48 by jchichep          #+#    #+#             */
+/*   Updated: 2014/03/25 08:26:36 by jchichep         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include	<unistd.h>
 #include	"color.h"
@@ -25,7 +17,7 @@
 
 int			get_key()
 {
-	char	 tab[3];
+	char	tab[3];
 
 	read(0, tab, 1);
 	if (tab[0] == 27)

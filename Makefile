@@ -1,21 +1,22 @@
-##
-## Makefile for  in /home/chiche_j//Lem_test
-## 
-## Made by jonathan chicheportiche
-## Login   <chiche_j@epitech.net>
-## 
-## Started on  Thu Sep 20 10:54:33 2012 jonathan chicheportiche
-## Last update Sun Sep 30 23:00:46 2012 jonathan chicheportiche
-##
-
+#******************************************************************************#
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jchichep <jchichep@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2014/03/25 08:20:56 by jchichep          #+#    #+#              #
+#    Updated: 2014/03/25 08:35:30 by jchichep         ###   ########.fr        #
+#                                                                              #
+#******************************************************************************#
 
 NAME	=	demineur
 
 PWD	=	$(shell pwd)
 
-SRCDIR	=	$(PWD)
+SRCDIR	=	.
 
-OBJDIR	=	$(PWD)
+OBJDIR	=	.
 
 ECHO	=	echo
 
